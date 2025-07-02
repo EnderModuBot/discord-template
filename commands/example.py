@@ -22,7 +22,7 @@ class ExampleCommand(BaseCommand):
             await send_message(
                 interaction,
                 f"Bot has the Permission: `{PermissionEnum.ADMINISTRATOR}`",
-                True,
+                ephemeral=True,
             )
 
         @bot.tree.command(
@@ -34,7 +34,7 @@ class ExampleCommand(BaseCommand):
             await send_message(
                 interaction,
                 f"Bot has the Permissions: `{PermissionEnum.KICK_MEMBERS}`, `{PermissionEnum.BAN_MEMBERS}`",
-                True,
+                ephemeral=True,
             )
 
         @bot.tree.command(
@@ -46,7 +46,7 @@ class ExampleCommand(BaseCommand):
             await send_message(
                 interaction,
                 f"You have the Permission: `{PermissionEnum.ADMINISTRATOR}`",
-                True,
+                ephemeral=True,
             )
 
         @bot.tree.command(
@@ -58,7 +58,7 @@ class ExampleCommand(BaseCommand):
             await send_message(
                 interaction,
                 f"You have the Permissions: `{PermissionEnum.KICK_MEMBERS}`, `{PermissionEnum.BAN_MEMBERS}`",
-                True,
+                ephemeral=True,
             )
 
         @bot.tree.command(
